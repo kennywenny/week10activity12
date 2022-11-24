@@ -2,11 +2,13 @@ const Algo = require("../algo");
 
 describe("Algo", () => {
   describe("reverse", () => {
-    const expected = 'neb'
+    it("should reverse a string", () => {
+      const expected = 'neb'
 
-    const actual = new Algo().reverse('ben')
-    
-    expect(actual).toBe(expected)
+      const actual = new Algo().reverse('ben')
+
+      expect(actual).toBe(expected)
+    })
   });
 
   describe("isPalindrome", () => {
