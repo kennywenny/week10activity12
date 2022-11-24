@@ -23,10 +23,15 @@ describe("Algo", () => {
 
       expect(actual).toBe(false)
     })
-    // TODO: Write a test for the `isPalindrome` method that should take a string as an argument and return the boolean `true` if the provided string is a palindrome.
   });
 
   describe("capitalize", () => {
-    // TODO: Write a test for the `capitalize` method that should take a string as an argument and return a new string with the first letter of each word capitalized
+    it("should capitalize all words", () => {
+      const expected = "Sam Is Really Good At Something"
+      
+      const actual = new Algo().capitalize("sam is really good at something")
+      
+      expect(actual).toBe(expected)
+    })
   });
 });
