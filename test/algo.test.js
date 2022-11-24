@@ -12,6 +12,11 @@ describe("Algo", () => {
   });
 
   describe("isPalindrome", () => {
+    it("should detect a palindrome", () => {
+      const actual = new Algo().isPalindrome('racecar')
+      
+      expect(actual).toBe(true)
+    })
     // TODO: Write a test for the `isPalindrome` method that should take a string as an argument and return the boolean `true` if the provided string is a palindrome.
   });
 
