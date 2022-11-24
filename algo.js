@@ -5,7 +5,7 @@ Algo.prototype.reverse = function(str) {
 };
 
 Algo.prototype.isPalindrome = function(str) {
-  return true
+  return this.reverse(str) === str
 };
 
 Algo.prototype.capitalize = function(str) {};
